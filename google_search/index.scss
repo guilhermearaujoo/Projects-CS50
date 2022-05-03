@@ -46,5 +46,48 @@ nav {
     img:hover {
         opacity: .8;
     }
+
+    button {
+        border: 1px solid #4285f4;
+        font-weight: bold;
+        outline: nome;
+        background: #4285f4;
+        color: #fff;
+        padding: 7px 12px;
+        border-radius: 3px;
+        margin-left: 7px;
+        cursor: pointer;
+    }
+}
+
+.section1 {
+    flex: 1;
+}
+
+.logo {
+    display: block;
+    margin: 0px auto;
+    margin-top: 107px;
+}
+
+.s-box {
+    width: 580px;
+    margin: 0px auto;
+    position: relative;
+    margin-top: -8px;
+    text-align: center;
+
+    .s-input {
+        display: block;
+        border: 1px solid #ddd;
+        color: rgb(0, 0, 0, 0.87);
+        font-size: 16px;
+        padding: 13px;
+        padding-left: 45px;
+        border-radius: 25px;
+        width: 100%;
+        transition: box-shadow 100ms;
+        outline: none;
+    }
 }
 
