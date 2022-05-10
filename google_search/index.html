@@ -2,49 +2,36 @@
 <!--This is my Google Search Page-->
 <html lang="en">
     <head>
+        <meta charset="UTF-8"> <!--Define o tie de codificação usada, UTF-8 é a mais utilzada-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Permite que o internet explorer posso rodar sem problemas-->
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Estabelece como o site deve se comportar no celular-->
         <title>Google Search</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="index.css">
-        <link rel="icon" href="icon.png">
+        <!--<link rel="icon" href="icon.png"> Estabelece a logo superior da aba-->
     </head>
     <body>
-        <nav>
-           <a href="#">Gmail</a>
-           <a href="#">Images</a>
-           <img src="menu.jpeg" id="menu">
-           <button>Sign in</button>
-        </nav>
-        <section class="section-1">
-            <img src="logo.png" class="logo">
-            <form><br><br>
-                <div class="s-box">
-                    <img src="search.png" class="search-icon">
-                    <input type="text" class="s-input">
-                    <img src="vs.png" class="vs-icon">
-                    <input type="submit" class="s-btn" value="Google Search">
-                    <input type="submit" class="s-btn" value="I'm Feeling Lucky!">
-                </div>
-            </form>
-            <div clas="lang">
-                Google Offered in:
-                <a href="#">Brasil</a>
-                <a href="#">Joinville</a>
-            </div>
-        </section>
-        <footer>
-            <h4>Brasil</h4>
-            <div class="link-1">
-                <a href="#">Advertising</a>
-                <a href="#">Business</a>
-                <a href="#">About</a>
-                <a href="#">How search works</a>
-            </div>
-            <div class="link-2">
-                <a href="#">Privacy</a>
-                <a href="#">Terms</a>
-                <a href="#">Settings</a>
-            </div>
+        <!-- Será usada depois quando criar google search e advanced -->
+        <div class="links">
+            <a class="image_search" href="image.html">Image Search</a>
+            <a class="advanced_search" href="advanced.html">Advanced Search</a>
+        </div>
+       
 
-        </footer>
+        
+        <div class="form"> 
+            <img class="logo" alt="Google" src="https://www.google.com.br/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+
+            <!--cria um formulario que será a serch bar-->
+            <form method="GET" action="https://google.com/search">
+                <input class="searchbar" type="text" name="q"/>
+                <br>
+                <div>
+                    <!--Adiciona os botões abaixo da search bar-->
+                    <input class="submit" type="submit" value="Google Search"/>
+                    <!--Nome btnI me garante que ao apertar o botão será redirecionado para o im feeling lucky-->
+                    <input class="submit" type="submit" value="I'm Feeling Lucky" name="btnI"/>
+                </div>      
+            </form>
+        </div>  
     </body>
 </html>

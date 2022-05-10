@@ -1,88 +1,73 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  font-family: Arial, sans-serif;
+body{
+  font-family: Arial;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+.form{
+  text-align: center;
+  width: 50%;
+  background-color: transparent;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  margin-right: 30px;
-  margin-top: 14px;
+.links{
+  text-align: right;
+  height: 200px;
 }
-nav a {
-  font-size: 13px;
+
+.logo{
+  margin:20px;
+  height:"92";
+  width:"272";
+}
+
+.searchbar{
+  margin-top: 5px;
+  background-image:url('https://icon-library.com/images/google-search-icon/google-search-icon-13.jpg');
+  background-repeat: no-repeat;
+  background-size: 22px 22px;
+  background-position: 10px 10px;
+  background-color:#fff;
+  padding:10px;
+  padding-left: 40px;
+  width: 50%;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  box-shadow: none;
+  font-size: 1em;
+}
+
+.searchbar:hover{
+    border-style: groove;
+}
+
+.image_search , .advanced_search , .index{
+  font-size: 1em;
   display: inline-block;
   line-height: 24px;
-  font-weight: 400;
-  color: rgba(0, 0, 0, 0.87);
-  cursor: pointer;
-  padding: 5px, 10px;
-  padding-right: 4px;
-  padding-left: 4px;
+  vertical-align: middle;
+  color: rgba(0,0,0,0.87);
+  text-decoration: none;
+  margin: 10px;
 }
-nav a:hover {
+
+.image_search:hover , .advanced_search:hover, .index:hover{
   text-decoration: underline;
-  opacity: 0.85;
-}
-nav img {
-  width: 34px;
-  padding: 5px;
-  margin: auto 7px;
-  cursor: pointer;
-}
-nav img:hover {
-  opacity: 0.8;
-}
-nav button {
-  border: 1px solid #4285f4;
-  font-weight: bold;
-  outline: nome;
-  background: #4285f4;
-  color: #fff;
-  padding: 7px 12px;
-  border-radius: 3px;
-  margin-left: 7px;
-  cursor: pointer;
 }
 
-.section1 {
-  flex: 1;
+.submit{
+  color: #3c4043;
+  margin-top: 25px;
+  margin-left:5px;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  background-color:#f8f9fa;
+  font-size: 14px;
+  padding: 10px;
+  font: 400 13.3333px Arial;
 }
 
-.logo {
-  display: block;
-  margin: 0px auto;
-  margin-top: 107px;
+.submit:hover{
+  border-style: outset;
 }
 
-.s-box {
-  width: 580px;
-  margin: 0px auto;
-  position: relative;
-  margin-top: -8px;
-  text-align: center;
-}
-.s-box .s-input {
-  display: block;
-  border: 1px solid #ddd;
-  color: rgba(0, 0, 0, 0.87);
-  font-size: 16px;
-  padding: 13px;
-  padding-left: 45px;
-  border-radius: 25px;
-  width: 100%;
-  transition: box-shadow 100ms;
-  outline: none;
-}
-
-/*# sourceMappingURL=index.css.map */
