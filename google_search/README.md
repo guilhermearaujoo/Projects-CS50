@@ -7,5 +7,5 @@ Here we have the frontend for:
 * Google Advanced 
 * Google Images
 
-You can see the results downloading the projects and running in yout machine using *open <nameoffile>*
+You can see the results downloading the projects and running in yout machine using *open name_of_file*
 
